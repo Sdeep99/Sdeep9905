@@ -1,0 +1,65 @@
+#include <stdio.h>  
+int main()  
+{  
+    int n1,n2;
+    char opt;
+    float res;
+    
+    printf("slect the operator (+,-,*,/) you want to perform operation with\t");
+    scanf("%c",&opt);
+    
+    if(opt=='+'){
+    	
+    	printf("\nyou have selected the addtion\n");
+	}
+    else if(opt=='-'){
+    	
+    	printf("\nyou have selected the subtraction\n");
+	}
+	else if(opt=='*'){
+    	
+    	printf("\nyou have selected the multiplication\n");
+	}
+	else if(opt=='/'){
+    	
+    	printf("\nyou have selected the devision\n");
+	}
+	
+      
+    printf("\nenter the first number\t");
+    scanf("%d",&n1);
+    
+    printf("\nenter the second number\t");
+    scanf("%d",&n2);
+    
+    switch(opt){
+    	case'+':
+    		res=n1+n2;
+    		printf("\nthe adittion of %d and %d is:\t%.2f",n1,n2,res);
+    		break;
+    		
+    	case'-':
+    		res=n1-n2;
+    		printf("\n\nthe subtraction of %d and %d is:\t%.2f",n1,n2,res);
+    		break;
+    	
+    	case'*':
+    		res=n1*n2;
+    		printf("\n\nthe multiplication of %d and %d is:\t%.2f",n1,n2,res);
+    		break;
+    		
+    	case'/':
+    		if(n2==0){//0 cann't we devisor
+    		  printf("0 cann't be devisor, please eneter the number again");
+    		  scanf("%d",&n2);
+    	}
+    		res=n1/n2;
+    		printf("\nthe devision of %d and %d is:\t%.2f",n1,n2,res);
+    		break;
+    	Default:
+    		printf("\nsomething is worng, please check the operator used");
+    		
+	}
+	return 0;
+    
+}  
