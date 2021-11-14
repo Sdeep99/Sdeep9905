@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Sdeep99
+- 👋 Hi, I’m Saideep
 - 👀 I’m interested in Singing, Reading, Music and coding
 - 🌱 I’m currently learning C Language
 - 💞️ I’m looking to collaborate on google or Microsoft
